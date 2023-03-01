@@ -38,7 +38,7 @@ img {
   border-radius: 50%;
   height: 25vh;
   width: 25vh;
-  margin: 30px
+  margin-right: 30px
 }
 h3{
   font-size: 80%;
