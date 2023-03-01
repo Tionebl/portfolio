@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import FooterMessage from '@/components/footer.vue'
 
 </script>
 
@@ -15,6 +16,7 @@ import { RouterLink, RouterView } from 'vue-router'
   </header>
 
   <RouterView />
+  <footer-message></footer-message>
 </template>
 
 <style scoped>
