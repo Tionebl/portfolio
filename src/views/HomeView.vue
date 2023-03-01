@@ -30,6 +30,7 @@ import typeWriter from '@/components/typeWriter/typeWriter.vue'
 
  padding: 10px;
  border-left: solid 1px gray;
+ min-width: 30vh;
 
 }
 
@@ -43,6 +44,7 @@ h3{
   font-size: 80%;
   text-align : justify;
   max-width: 50vh;
+  
   margin-left: auto;
   margin-right: auto
 }
