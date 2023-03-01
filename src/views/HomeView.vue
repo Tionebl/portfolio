@@ -1,13 +1,14 @@
 <template>
-
-  <div class="container">
-    <div class=" img">
-     <img class= "imgApp" src="@/assets/moicat.png">
-    </div>
-  
-    <div class="infoContainer">
-      <typeWriter class="typeApp"></typeWriter>
-      <h3 class="leftApparition"> Hey there! I'm a web developer based in Lille. With a passion for building dynamic and interactive web applications, I specialize in using Javascript and Vue 3 to create seamless user experiences. Whether it's designing responsive websites or crafting complex web applications, I love to bring my ideas to life through code. Thanks for stopping by my portfolio!</h3>
+  <div class = page>
+    <div class="container">
+      <div class=" img">
+      <img class= "imgApp" src="@/assets/moicat.png">
+      </div>
+    
+      <div class="infoContainer">
+        <typeWriter class="typeApp"></typeWriter>
+        <h3 class="leftApparition"> Hey there! I'm a web developer based in Lille. With a passion for building dynamic and interactive web applications, I specialize in using Javascript and Vue 3 to create seamless user experiences. Whether it's designing responsive websites or crafting complex web applications, I love to bring my ideas to life through code. Thanks for stopping by my portfolio!</h3>
+      </div>
     </div>
   </div>
 </template>
@@ -20,8 +21,13 @@ import typeWriter from '@/components/typeWriter/typeWriter.vue'
 
 <style scoped>
 
+.page{
 
-
+  position: fixed;
+  top: 40%;
+  left: 50%; /* Modification */
+  transform: translateX(-50%); /* Modification */
+}
 .container {
   display: flex;
   margin: 30px;
@@ -30,7 +36,7 @@ import typeWriter from '@/components/typeWriter/typeWriter.vue'
 
  padding: 10px;
  border-left: solid 1px gray;
- min-width: 30vh;
+ min-width: 40vh;
 
 }
 

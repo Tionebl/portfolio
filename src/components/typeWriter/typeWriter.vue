@@ -67,10 +67,9 @@ export default {
   
 <style scoped>
   
-  .container{
-  
-    width: 100%;
+  .container{  
     /* height: 100vh; */
+    width: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,6 +97,7 @@ export default {
   
     text-decoration: none;
     color: hsla(160, 100%, 37%, 1);
+   
   }
   @keyframes blink {
     from,

@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1> Work in progres... </h1>
+    <h1> Work in progress... </h1>
   </div>
 </template>
 
@@ -10,11 +10,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  position: fixed;
+  top: 40%;
+  left: 50%; /* Modification */
+  transform: translateX(-50%); /* Modification */
+  
 }
 @media (min-width: 1024px) {
   .about {
-    min-height: 100vh;
+
     display: flex;
     align-items: center;
   }

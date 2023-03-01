@@ -1,6 +1,6 @@
 <template>
 
-  <div class="container">
+  <div class="container-form">
     <form @submit.prevent="submitForm">
       <label for="name">Nom :</label>
       <input v-model="name" id="name" type="text" required>
@@ -36,11 +36,11 @@
 </script>
 
 <style scoped>
-.container {
+.container-form {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  
 }
 
 .form {

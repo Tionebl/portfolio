@@ -21,6 +21,16 @@ const router = createRouter({
       path: '/contactForm',
       name: 'contact',
       component: () => import ('../views/contactForm.vue')
+    },
+    {
+      path: '/skills',
+      name: 'skills',
+      component: () => import ('../views/skills.vue')
+    },
+    {
+      path: '/xpAndDegrees',
+      name: 'xp',
+      component: () => import ('../views/degree.vue')
     }
   ]
 })
