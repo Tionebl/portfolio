@@ -22,6 +22,7 @@ import FooterMessage from '@/components/footer.vue'
 </template>
 
 <style scoped>
+
 header {
   line-height: 1.5;
   
@@ -51,12 +52,13 @@ nav a.router-link-exact-active:hover {
 .footer-message {
   position: fixed;
   bottom: 0;
-  transform: translateX(-100%);
+  transform: translateX(-90%);
 }
 nav a {
   display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  /* padding: 0 1rem; */
+  padding-left: 30px;
+  border-left: 2px solid var(--color-border);
   margin-left: 20px;
   margin-right: 10px;
 }
@@ -64,12 +66,7 @@ nav a {
 nav a:first-of-type {
   border: 0;
 }
-footer-message {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
+
 @media (min-width: 1024px) {
   header {
     display: flex;
@@ -84,6 +81,30 @@ footer-message {
 
     padding: 1rem 0;
     margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  nav a {
+    display: block;
+    padding: 1rem 0;
+    border-left: none;
+    border-bottom: 1px solid var(--color-border);
+    margin: 0;
+  }
+  
+  nav a:last-of-type {
+    border-bottom: none;
   }
 }
 </style>

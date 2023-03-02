@@ -80,7 +80,7 @@ h3 {
 }
 
 .progress-bar-fill-js {
-  background-color: #4caf50;
+  background-color: hsla(160, 100%, 37%, 1);
   text-align: center;
   color: white;
   animation: fill-progress-js 2s forwards;
@@ -104,7 +104,7 @@ h3 {
 
 @keyframes fill-progress-js {
   from { width: 0%; background-color: red }
-  to { width: 60%; background-color:#4CAF50}
+  to { width: 60%; background-color:hsla(160, 100%, 37%, 1)}
 }
 @keyframes fill-php {
   from { width: 0%; background-color: red }
