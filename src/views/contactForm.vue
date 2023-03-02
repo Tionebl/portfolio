@@ -1,5 +1,5 @@
 <template>
-  <div class="things"> <p> Join me on my email!</p>
+  <div class="things"> <p> Join me on my email...</p>
   <div class="content">
     <div class="arrow">
       <div class="curve"></div>
@@ -44,7 +44,7 @@ p {
 
   color:#04AA6D;
   font-style: italic;
-  text-decoration: underline;
+
   font-size: 1rem;
   animation-name: slide-in-bot;
   animation-duration: 1s;
