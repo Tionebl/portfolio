@@ -9,7 +9,7 @@
 </div>
 <div class="container-form">
   <a href="https://www.linkedin.com/in/benoit-lavoine-bb6b06155/">
-    <img src="src\assets\linkedin.png">
+    <img src="src/assets/linkedin.png">
   </a>
   <input type="text"  value="pro.benoitlavoine@gmail.com" id="myInput" readonly="readonly">
   <button @click="copyEmail()"> {{ copyArea }}</button>
