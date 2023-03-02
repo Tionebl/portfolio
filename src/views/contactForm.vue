@@ -1,5 +1,5 @@
 <template>
-  <div class="things"> <span> Check my email!</span>
+  <div class="things"> <p> Join me on my email!</p>
   <div class="content">
     <div class="arrow">
       <div class="curve"></div>
@@ -8,7 +8,6 @@
   </div> 
 </div>
   <div class="container-form">
-    <span> My Email: </span>
     <input type="text"  value="pro.benoitlavoine@gmail.com" id="myInput" readonly="readonly">
     <button @click="copyEmail()"> {{ copyArea }}</button>
   </div>
@@ -18,7 +17,7 @@
 <script setup>
 
 import {ref} from 'vue';
-  const copyArea = ref('Copy text')
+  const copyArea = ref('Copy')
   function copyEmail() {
     var copyText = document.getElementById("myInput");
 
@@ -27,7 +26,7 @@ import {ref} from 'vue';
 
     navigator.clipboard.writeText(copyText.value);
 
-    copyArea.value = ' Text copied'
+    copyArea.value = ' Copied'
 
     //alert("Copied the text: " + copyText.value);
   }
@@ -40,13 +39,36 @@ label{
 
   color:  var(--color-text) ;
 }
+
+p {
+
+  color:#04AA6D;
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 1rem;
+  animation-name: slide-in-bot;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+@keyframes slide-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .container-form {
   display:flex;
   border-radius: 5px;
   background-color: --color-background;
   padding: 20px;
   position: fixed;
-  top: 40%;
+  top: 60%;
   left: 50%; /* Modification */
   transform: translateX(-50%); /* Modification */
   
@@ -57,8 +79,8 @@ button {
 
   background-color: #04AA6D;
   border: none;
-  width: 60%;
-  max-width: 60%;
+  width: 30%;
+  max-width: 30%;
   cursor: pointer;
   color: white;
   padding: 12px 20px;
@@ -165,7 +187,7 @@ textarea{
   animation-duration: 1s;
   animation-fill-mode: forwards;
   opacity: 0;
-  animation-delay: 0.5s;
+  animation-delay: 0.7s;
 
 }
 
