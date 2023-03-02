@@ -1,3 +1,6 @@
+<script setup>
+import typeWriter from '@/components/typeWriter/typeWriter.vue'
+</script>
 <template>
   <div class = page>
     <div class="container">
@@ -12,15 +15,7 @@
     </div>
   </div>
 </template>
-<script setup>
-
-import typeWriter from '@/components/typeWriter/typeWriter.vue'
-
-</script>
-
-
 <style scoped>
-
 .page{
 
   position: fixed;

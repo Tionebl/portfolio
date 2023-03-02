@@ -46,7 +46,6 @@ nav {
   top: 0;
   left: 50%; /* Modification */
   transform: translateX(-50%); /* Modification */
-  
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
