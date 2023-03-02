@@ -84,4 +84,16 @@ button[type=submit]:hover {
   background-color: #45a049;
 }
 
+@media screen and (max-width: 624px) {
+
+
+.container-form{
+
+    top: 30%;
+    width: 300px;
+   
+
+
+}
+}
 </style>

@@ -113,4 +113,35 @@ h3{
     transform: translateY(0);
   }
 }
+
+@media screen and (max-width: 1024px) {
+
+  img {
+  border-radius: 50%;
+  height: 15vh;
+  width: 15vh;
+  margin-right: 30px
+}
+.infoContainer{
+
+padding: 10px;
+border-left: solid 1px gray;
+min-width: 5vh;
+
+}
+}
+@media screen and (max-width: 624px) {
+
+
+  .container{
+
+    max-width: 400px ;
+  }
+
+  .img{
+  transform: translateY(30%);
+}
+
+
+}
 </style>

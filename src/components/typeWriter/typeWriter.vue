@@ -144,5 +144,27 @@ export default {
       color: #2c3e50;
     }
   }
+
+@media screen and (max-width: 624px) {
+
+
+.container{
+  font-size: 8px;
+  width: 100px ;
+  margin: 10px;
+  justify-content: start;
+  align-items: start;
+}
+
+.blinking-cursor {
+    font-size: 1rem;
+    color: #2c3e50;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+}
   
 </style>
