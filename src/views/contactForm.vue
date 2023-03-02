@@ -1,42 +1,35 @@
 <template>
-
+  <div class="things"> <span> Check my email!</span>
+  <div class="content">
+    <div class="arrow">
+      <div class="curve"></div>
+      <div class="point"></div>
+    </div>
+  </div> 
+</div>
   <div class="container-form">
-    <form @submit.prevent="submitForm">
-
-      <label for="fname">First Name</label>
-        <input v-model="name" type="text" id="fname" name="firstname" placeholder="Your name..">
-      <br>
-      <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      <br>
-      <label for="email">Email</label>
-      <input v-model="email" type="text"  id="email" placeholder="Email..." required>
-      <br>
-      <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      <button type="submit">Envoyer</button>
-    </form>
-    <p v-if="formSubmitted">Formulaire envoyé avec succès !</p>
+    <span> My Email: </span>
+    <input type="text"  value="pro.benoitlavoine@gmail.com" id="myInput" readonly="readonly">
+    <button @click="copyEmail()"> {{ copyArea }}</button>
   </div>
-
 
 </template>
 
 <script setup>
 
-  let name = '';
-  let email = '';
-  let formSubmitted = false;
+import {ref} from 'vue';
+  const copyArea = ref('Copy text')
+  function copyEmail() {
+    var copyText = document.getElementById("myInput");
 
-  function submitForm() {
-    // Vérifier que les champs obligatoires sont remplis
-    if (name && email) {
-      // Envoyer le formulaire
-      // ...
-      
-      // Afficher le message de succès
-      formSubmitted = true;
-    }
+    copyText.select(); 
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+
+    navigator.clipboard.writeText(copyText.value);
+
+    copyArea.value = ' Text copied'
+
+    //alert("Copied the text: " + copyText.value);
   }
 
 </script>
@@ -48,41 +41,44 @@ label{
   color:  var(--color-text) ;
 }
 .container-form {
+  display:flex;
   border-radius: 5px;
   background-color: --color-background;
   padding: 20px;
   position: fixed;
-  top: 40;
+  top: 40%;
   left: 50%; /* Modification */
   transform: translateX(-50%); /* Modification */
   
 }
 
+
+button {
+
+  background-color: #04AA6D;
+  border: none;
+  width: 60%;
+  max-width: 60%;
+  cursor: pointer;
+  color: white;
+  padding: 12px 20px;
+  margin-left: 10px
+}
+
+button:hover {
+
+background-color: #45a049;
+
+}
 input[type=text], textarea {
 
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */  
   border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
-button[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
 
-}
-
-button[type=submit]:hover {
-
-  background-color: #45a049;
-}
 
 @media screen and (max-width: 624px) {
 
@@ -90,10 +86,116 @@ button[type=submit]:hover {
 .container-form{
 
     top: 30%;
-    width: 300px;
-   
+}
 
 
+textarea{
+
+  height:10px
 }
+
 }
+
+
+.things > .content {
+  width: 50%;
+  height: 500px;
+  -webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box;
+  position: relative;
+}
+
+.things > .content h1 {
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  height: 150px;
+  color: #04AA6D;
+}
+
+/* Arrow */
+
+.arrow {
+	position: relative;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.arrow .curve {
+	border: 2px solid #04AA6D;;
+	border-color: transparent transparent transparent #04AA6D;;
+	height: 360px;
+	width: 1200px;
+	border-radius: 230px 0 0 150px;
+  animation-name: slide-in-top;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 0s;
+}
+
+@keyframes slide-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.arrow .point {
+	position: absolute;
+	left: 40px;
+	top: 315px;
+}
+
+.arrow .point:before, .arrow .point:after {
+	border: 1px solid #04AA6D;
+	height: 25px;
+	content: "";
+	position: absolute;
+  animation-name: slide-in-bot;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
+
+}
+
+@keyframes slide-in-bot {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(100);
+  }
+}
+
+.arrow .point:before {
+	top: -11px;
+	left: -11px;
+	transform:rotate(-74deg);
+	-webkit-transform:rotate(-74deg);
+  -moz-transform:rotate(-74deg);
+  -ms-transform: rotate(-74deg);
+}
+
+.arrow .point:after {
+  top: -20px;
+	left: 5px;
+	transform:rotate(12deg);
+	-webkit-transform: rotate(12deg);
+  -moz-transform:rotate(12deg);
+  -ms-transform: rotate(12deg);
+}
+
 </style>
