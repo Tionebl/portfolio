@@ -120,7 +120,7 @@ h3{
   border-radius: 50%;
   height: 15vh;
   width: 15vh;
-  margin-right: 30px
+  margin: 30px
 }
 .infoContainer{
 

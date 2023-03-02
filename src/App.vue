@@ -14,7 +14,9 @@ import FooterMessage from '@/components/footer.vue'
       <RouterLink to='/xpAndDegrees'>XP & Degrees</RouterLink>
       <RouterLink to='/contactForm'>Contact</RouterLink>
     </nav>
-    <RouterView />
+    <transition name="fade">
+      <RouterView />
+    </transition>
   </header>
   <div class = "footer-message">
   <footer-message></footer-message>
@@ -28,6 +30,16 @@ header {
   
 }
 
+/* Define the transition effect */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.7s ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
 
 nav {
   position: fixed;
@@ -67,7 +79,7 @@ nav a:first-of-type {
   border: 0;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   header {
     display: flex;
     place-items: center;
@@ -75,12 +87,18 @@ nav a:first-of-type {
   }
 
   nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    margin: 0;
+    border-radius: 0;
+    margin-top: 30px;
+  }
+  
+  nav a:last-of-type {
+    border-bottom: none;
   }
 }
 
