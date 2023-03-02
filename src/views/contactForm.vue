@@ -205,5 +205,19 @@ input[type=text], textarea {
 }
 }
 
+@media screen and (max-width: 376px){
+  .things {
+display: none;
+}
+
+.container-form{
+
+top: 40%;
+}
+
+button{
+  width: 100px;
+}
+}
   
 </style>
