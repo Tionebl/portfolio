@@ -23,7 +23,7 @@ animation-name: slide-in-right_1;
 animation-duration: 1s;
 animation-fill-mode: forwards;
 opacity: 0;
-animation-delay: 0.5s;
+animation-delay: 0s;
 
 }
 .li_2 {
@@ -32,7 +32,7 @@ animation-name: slide-in-right_2;
 animation-duration: 1s;
 animation-fill-mode: forwards;
 opacity: 0;
-animation-delay: 1s;
+animation-delay: 0.5s;
 
 }
 .li_3 {
@@ -41,7 +41,7 @@ animation-name: slide-in-right_3;
 animation-duration: 1s;
 animation-fill-mode: forwards;
 opacity: 0;
-animation-delay: 1.5s;
+animation-delay: 1s;
 
 }
 .li_4 {
@@ -50,7 +50,7 @@ animation-name: slide-in-right_4;
 animation-duration: 1s;
 animation-fill-mode: forwards;
 opacity: 0;
-animation-delay: 2s;
+animation-delay: 1.5s;
 
 
 }
@@ -104,8 +104,4 @@ padding: 15px;
 border-left: solid 1px;
 }
 
-
-div{
-    
-}
 </style>
