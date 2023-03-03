@@ -18,9 +18,9 @@ import FooterMessage from '@/components/footer.vue'
       <RouterView />
     </transition>
   </header>
-  <div class = "footer-message">
+  <!-- <div class = "footer-message">
   <footer-message></footer-message>
-  </div>
+  </div> -->
 </template>
 
 <style scoped>
