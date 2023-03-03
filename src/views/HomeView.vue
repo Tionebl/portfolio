@@ -54,6 +54,20 @@ button {
   background-color:#04AA6D;
   border:none;
   cursor: pointer;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 button:hover{
