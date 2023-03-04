@@ -19,7 +19,7 @@ const router = createRouter({
     },
     {
       path: '/contactForm',
-      name: 'contact',
+      name: 'contactForm',
       component: () => import ('../views/contactForm.vue')
     },
     {
@@ -28,8 +28,8 @@ const router = createRouter({
       component: () => import ('../views/skills.vue')
     },
     {
-      path: '/xpAndDegrees',
-      name: 'xp',
+      path: '/degree',
+      name: 'degree',
       component: () => import ('../views/degree.vue')
     }
   ]

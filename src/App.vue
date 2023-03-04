@@ -11,7 +11,7 @@ import FooterMessage from '@/components/footer.vue'
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to='/about'>About</RouterLink>
       <RouterLink to='/skills'>Skills</RouterLink>
-      <RouterLink to='/xpAndDegrees'>XP & Degrees</RouterLink>
+      <RouterLink to='/degree'>XP & Degrees</RouterLink>
       <RouterLink to='/contactForm'>Contact</RouterLink>
     </nav>
     <transition name="fade">
