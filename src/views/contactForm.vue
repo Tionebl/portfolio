@@ -1,22 +1,22 @@
 <template>
-  <div class="content">
-    <div class="things"> <p> Join me on my email or by LinkedIn</p>
-    <div class="arrow">
-      <div class="curve"></div>
-      <div class="point"></div>
+    <div class="content">
+      <div class="things"> <p> Join on me LinkedIn  <a href="https://www.linkedin.com/in/benoit-lavoine-bb6b06155/">
+        <img src="@/assets/linkedin.png"> 
+        </a> or by Mail</p>
+          <div class="arrow">
+            <div class="curve"></div>
+            <div class="point"></div>
+          </div>
+      </div> 
+      <div class="container-form">
+        <input type="text"  value="pro.benoitlavoine@gmail.com" id="myInput" readonly="readonly">
+        <button @click="copyEmail()"> {{ copyArea }}</button>
+      </div>
     </div>
-  </div> 
-</div>
-<div class="container-form">
-  <a href="https://www.linkedin.com/in/benoit-lavoine-bb6b06155/">
-    <img src="@/assets/linkedin.png">
-  </a>
-  <input type="text"  value="pro.benoitlavoine@gmail.com" id="myInput" readonly="readonly">
-  <button @click="copyEmail()"> {{ copyArea }}</button>
-  </div>
 </template>
 
 <script setup>
+
 import {ref} from 'vue';
   const copyArea = ref('Copy')
   function copyEmail() {
@@ -30,7 +30,7 @@ import {ref} from 'vue';
 <style scoped>
 img{
   width: 5vh;
-  right: 30px;
+  top: 20px
 }
 label{
   color:  var(--color-text) ;

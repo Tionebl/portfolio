@@ -18,7 +18,16 @@ const downloadPdf = () => {
     
       <div class="infoContainer">
         <typeWriter class="typeApp"></typeWriter>
-        <h3 class="leftApparition"> Hey there! I'm a web developer based in Lille. With a passion for building dynamic and interactive web applications, I specialize in using Javascript and Vue 3 to create seamless user experiences. Whether it's designing responsive websites or crafting complex web applications, I love to bring my ideas to life through code. Thanks for stopping by my portfolio!</h3>
+        <h3 class="leftApparition">
+          Hey there! I'm a <span class="bold-text"> web developer </span> based in
+          <strong><span class="bold-text">Lille</span></strong>.
+          With a passion for building dynamic and interactive web applications, I specialize in using
+          <strong><span class="bold-text">Javascript</span>
+          </strong> and <strong><span class="bold-text">Vue 3</span>
+          </strong>  to create seamless user experiences. Whether it's designing responsive websites or crafting complex web applications,
+          I love to bring my ideas to life through code.
+          Thanks for stopping by my portfolio!
+          </h3>
         <button @click="downloadPdf">Download CV</button>
       </div>
     </div>
@@ -84,7 +93,7 @@ img {
   margin-right: 30px
 }
 h3{
-  font-size: 80%;
+  font-size: 1.1rem;
   text-align : justify;
   max-width: 50vh;
   
@@ -197,6 +206,11 @@ min-width: 5vh;
     top: 88%;
     left: 70%;
   }
+  h3 {
+    font-size: 80%;
+  }
 }
-
+.bold-text {
+  font-weight: bold;
+}
 </style>

@@ -1,7 +1,5 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import FooterMessage from '@/components/footer.vue'
-
 </script>
 
 <template>
@@ -18,9 +16,6 @@ import FooterMessage from '@/components/footer.vue'
       <RouterView />
     </transition>
   </header>
-  <!-- <div class = "footer-message">
-  <footer-message></footer-message>
-  </div> -->
 </template>
 
 <style scoped>
@@ -46,9 +41,11 @@ nav {
   top: 0;
   left: 50%; /* Modification */
   transform: translateX(-50%); /* Modification */
-  font-size: 12px;
+  font-size: 1.4rem;
   text-align: center;
   margin-top: 2rem;
+  z-index: 1000;
+  white-space: nowrap;
   /* border: solid 1px;
   border-radius: 30px */
 }
@@ -60,18 +57,14 @@ nav a.router-link-exact-active {
 nav a.router-link-exact-active:hover {
   background-color: transparent;
 }
-.footer-message {
-  position: fixed;
-  bottom: 0;
-  transform: translateX(-90%);
-}
+
 nav a {
   display: inline-block;
   /* padding: 0 1rem; */
   padding-left: 30px;
+  padding-right: 30px;
   border-left: 2px solid var(--color-border);
-  margin-left: 20px;
-  margin-right: 10px;
+  
 }
 
 nav a:first-of-type {
@@ -110,6 +103,7 @@ nav a:first-of-type {
     transform: none;
     margin: 0;
     border-radius: 0;
+    font-size: 14px;
   }
   
   nav a {
