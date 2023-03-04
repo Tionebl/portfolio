@@ -1,20 +1,11 @@
 {
-    "routes": [
-      {
-        "src": "/.*",
-        "headers": {
-          "Content-Type": "text/html; charset=utf-8",
-          "X-Content-Type-Options": "nosniff",
-          "Referrer-Policy": "no-referrer"
-        },
-        "continue": true
-      },
-      {
-        "src": "/.*\\.js",
-        "headers": {
-          "Content-Type": "application/javascript; charset=utf-8"
-        },
-        "continue": true
-      }
-    ]
-  }
+	"github": {
+		"silent": true
+	},
+	"rewrites": [
+		{
+			"source": "(.*)",
+			"destination": "/index.html"
+		}
+	]
+}
