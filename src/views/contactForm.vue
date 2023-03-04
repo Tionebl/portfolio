@@ -1,8 +1,8 @@
 <template>
     <div class="content">
-      <div class="things"> <p> Join on me LinkedIn  <a href="https://www.linkedin.com/in/benoit-lavoine-bb6b06155/">
+      <div class="things"> <p> Join on me <span class="bold-text"> LinkedIn </span> <a href="https://www.linkedin.com/in/benoit-lavoine-bb6b06155/">
         <img src="@/assets/linkedin.png"> 
-        </a> or by Mail</p>
+        </a> or by <span class="bold-text"> Mail </span></p>
           <div class="arrow">
             <div class="curve"></div>
             <div class="point"></div>
@@ -130,6 +130,11 @@ input[type=text], textarea {
   animation-fill-mode: forwards;
   opacity: 0;
   animation-delay: 0s;
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 @keyframes slide-in-top {
   from {
