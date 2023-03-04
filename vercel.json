@@ -1,13 +1,14 @@
 {
-  "headers": [
+  "routes": [
     {
-      "source": "*.js",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/javascript"
-        }
-      ]
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/:path*.js",
+      "destination": "/api/js-handler"
     }
   ]
 }
