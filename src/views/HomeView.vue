@@ -1,6 +1,6 @@
 <script setup>
 import typeWriter from '@/components/typeWriter/typeWriter.vue'
-const pdfUrl = "public/CV_Oct2022_BenoitLavoine.pdf";
+const pdfUrl = "././public/CV_Oct2022_BenoitLavoine.pdf";
 
 const downloadPdf = () => {
   const link = document.createElement('a');

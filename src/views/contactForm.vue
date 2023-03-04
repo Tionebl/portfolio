@@ -15,13 +15,14 @@
   <button @click="copyEmail()"> {{ copyArea }}</button>
   </div>
 </template>
+
 <script setup>
 import {ref} from 'vue';
   const copyArea = ref('Copy')
   function copyEmail() {
     var copyText = document.getElementById("myInput");
     copyText.select(); 
-    copyText.setSelectionRange(0, 99999); // For mobile devices
+    copyText.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(copyText.value);
     copyArea.value = ' Copied'
 }

@@ -16,7 +16,6 @@
 <script setup>
 </script>
 <style scoped>
-
 .page{
   display: flex;
   position: fixed;
@@ -26,7 +25,6 @@
   padding: 15px;
 }
 .year-xp{
-
 border: solid;
 border-color: transparent;
 background-color: #04AA6D;
@@ -52,41 +50,32 @@ ul{
   border-left: solid 1px;
 }
 .li_1 {
-
 animation-name: slide-in-right_1;
 animation-duration: 1s;
 animation-fill-mode: forwards;
 opacity: 0;
 animation-delay: 0s;
-
 }
 .li_2 {
-
 animation-name: slide-in-right_2;
 animation-duration: 1s;
 animation-fill-mode: forwards;
 opacity: 0;
 animation-delay: 0.5s;
-
 }
 .li_3 {
-
 animation-name: slide-in-right_3;
 animation-duration: 1s;
 animation-fill-mode: forwards;
 opacity: 0;
 animation-delay: 1s;
-
 }
 .li_4 {
-
 animation-name: slide-in-right_4;
 animation-duration: 1s;
 animation-fill-mode: forwards;
 opacity: 0;
-animation-delay: 1.5s;
-
-
+animation-delay: 1.5s
 }
 @keyframes slide-right-year {
 from {
