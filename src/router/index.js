@@ -31,6 +31,11 @@ const router = createRouter({
       path: '/degree',
       name: 'degree',
       component: () => import ('../views/degree.vue')
+    },
+    {
+      path: '/kendoUiTest',
+      name: 'kendoUiTest',
+      component: () => import ('../views/kendoUiTest.vue')
     }
   ]
 })

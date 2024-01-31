@@ -68,7 +68,7 @@ p {
   background-color: --color-background;
   padding: 20px;
   position: fixed;
-  top: 60%;
+  top: 65%;
   left: 50%; /* Modification */
   transform: translateX(-50%); /* Modification */
 }

@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import '@progress/kendo-theme-default/dist/all.css';
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink to='/skills'>Skills</RouterLink>
       <RouterLink to='/degree'>XP & Degrees</RouterLink>
       <RouterLink to='/contactForm'>Contact</RouterLink>
+      <RouterLink to='/kendoUiTest'>KendoUi</RouterLink>
     </nav>
     <transition name="fade">
       <RouterView />
@@ -39,8 +41,8 @@ header {
 nav {
   position: fixed;
   top: 0;
-  left: 50%; /* Modification */
-  transform: translateX(-50%); /* Modification */
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 1.4rem;
   text-align: center;
   margin-top: 2rem;
