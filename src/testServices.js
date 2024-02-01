@@ -1,6 +1,7 @@
 const { exec } = require('child_process');
 
-const nomDuService = 'wuauserv';
+// const nomDuService = 'wuauserv';
+const nomDuService = 'newNodeJS'
 
 // Commande pour démarrer le service Windows
 const commande = `net start ${nomDuService}`;

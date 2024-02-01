@@ -1,0 +1,2 @@
+2024-02-01 12:02:08 - Starting C:\Program Files\nodejs\node.exe  --harmony "C:\Users\BenoitLavoine\OneDrive - NooliTIC\Documents\portfolio\node_modules\node-windows\lib\wrapper.js" --file "C:\Users\BenoitLavoine\OneDrive - NooliTIC\Documents\portfolio\src\main.js" --scriptoptions= --log "newNodeJS wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-02-01 12:02:08 - Started 17384
